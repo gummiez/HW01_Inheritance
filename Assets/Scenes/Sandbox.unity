@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 521583357}
   - component: {fileID: 521583356}
   - component: {fileID: 521583355}
+  - component: {fileID: 521583360}
   m_Layer: 0
   m_Name: SpeedIncrease
   m_TagString: Untagged
@@ -406,6 +407,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521583360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521583354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec95ce71124c3a346b24c3d19eb663b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movementSpeed: 1
+  _collectParticles: {fileID: 0}
+  _collectSound: {fileID: 0}
+  _speedAmount: 5
 --- !u!1 &577670562
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 0.15
   _turnSpeed: 2
+  _maxSpeed: 10
 --- !u!114 &732590197
 MonoBehaviour:
   m_ObjectHideFlags: 0

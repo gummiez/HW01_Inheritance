@@ -19,5 +19,6 @@ public class SpeedIncrease : CollectableBase
 	protected override void Movement(Rigidbody rb)
 	{
 		Quaternion turnOffset = Quaternion.Euler(MovementSpeed, MovementSpeed, MovementSpeed);
+		rb.MoveRotation(rb.rotation * turnOffset);
 	}
 }
