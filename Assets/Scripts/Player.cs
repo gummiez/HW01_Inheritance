@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
 	[SerializeField] int _maxHealth = 3;
 	int _currentHealth;
+	int _treasureCount;
 
 	TankController _tankController;
 
@@ -34,6 +35,12 @@ public class Player : MonoBehaviour
 		{
 			Kill();
 		}
+	}
+
+	public void IncreaseTreasure(int amount)
+	{
+		_treasureCount += amount;
+		Debug.Log("Player's score: " + _treasureCount);
 	}
 
 	public void Kill()
