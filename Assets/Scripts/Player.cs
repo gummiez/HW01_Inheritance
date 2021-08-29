@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
 	public void SetInvicibility()
 	{
 		_isInvincible = !_isInvincible;
+		Debug.Log(_isInvincible);
 	}
 
 	public void MaterialSwap(Material mat)
